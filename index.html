@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu Order Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #fff8e7;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+        color: #d35400;
+    }
+    .menu-section {
+        margin-bottom: 25px;
+    }
+    label {
+        display: block;
+        margin: 6px 0;
+    }
+    input, textarea, button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    button {
+        background: #d35400;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #a84300;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Food Menu</h1>
+
+    <form action="https://formsubmit.co/prasanna.mamilla@effiasoft.com" method="POST">
+
+        <input type="hidden" name="_subject" value="New Food Order Received">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="menu-section">
+            <h2>Biriyani</h2>
+            <label><input type="checkbox" name="Dish" value="Paneer Biriyani"> Paneer Biriyani</label>
+            <label><input type="checkbox" name="Dish" value="Mushroom Biriyani"> Mushroom Biriyani</label>
+            <label><input type="checkbox" name="Dish" value="Veg Biriyani"> Veg Biriyani</label>
+            <label><input type="checkbox" name="Dish" value="Chicken Biriyani"> Chicken Biriyani</label>
+            <label><input type="checkbox" name="Dish" value="Mutton Biriyani"> Mutton Biriyani</label>
+            <label><input type="checkbox" name="Dish" value="Prawns Biriyani"> Prawns Biriyani</label>
+        </div>
+
+        <div class="menu-section">
+            <h2>Fast Foods</h2>
+            <label><input type="checkbox" name="Dish" value="Veg Fried Rice"> Veg Fried Rice</label>
+            <label><input type="checkbox" name="Dish" value="Chicken Fried Rice"> Chicken Fried Rice</label>
+            <label><input type="checkbox" name="Dish" value="Veg Fried Noodles"> Veg Fried Noodles</label>
+            <label><input type="checkbox" name="Dish" value="Chicken Fried Noodles"> Chicken Fried Noodles</label>
+        </div>
+
+        <div class="menu-section">
+            <h2>Italian</h2>
+            <label><input type="checkbox" name="Dish" value="Margherita Pizza"> Margherita Pizza</label>
+            <label><input type="checkbox" name="Dish" value="Chicken Alfredo Pasta"> Chicken Alfredo Pasta</label>
+            <label><input type="checkbox" name="Dish" value="Cheese Garlic Bread"> Cheese Garlic Bread</label>
+        </div>
+
+        <div class="menu-section">
+            <h2>Beverages</h2>
+            <label><input type="checkbox" name="Dish" value="Diet Coke"> Diet Coke</label>
+            <label><input type="checkbox" name="Dish" value="Sprite"> Sprite</label>
+            <label><input type="checkbox" name="Dish" value="Thums Up"> Thums Up</label>
+        </div>
+
+        <h2>Customer Details</h2>
+        <input type="text" name="Name" placeholder="Enter Your Name" required>
+        <input type="tel" name="Phone" placeholder="Enter Phone Number" required>
+        <textarea name="Notes" placeholder="Additional Notes"></textarea>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</div>
+</body>
+</html>
